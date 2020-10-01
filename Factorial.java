@@ -2,18 +2,19 @@ import java.util.*;
 
 class Factorial {
     public static void main(String args[]) {
-        
+
+        //accepts value only till 12 as i am taking int. should check this
         Scanner scan = new Scanner(System.in);
         
         System.out.println("Enter the number whose factorial is to be found : ");
 
-        int number = scan.nextInt();
+        long number = scan.nextLong();
 
         if(number == 0){
-            System.out.println("Factorial is : 0");
+            System.out.println("Factorial is : 1");
         }
         else{
-            for(int i = number-1 ; i > 0 ; i--){
+            for(long i = number - 1l ; i > 0 ; i--){
                 number *= i;
             }
             System.out.println("Factorial is : " + number);
